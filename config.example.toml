@@ -1,0 +1,46 @@
+# Obsidian Sticky — configuration
+#
+# Copy to ~/.config/obsidian-sticky/config.toml (install.sh does this for you)
+# or point at another file with --config PATH or $OBSIDIAN_STICKY_CONFIG.
+# Every setting is optional; the values below are the defaults.
+# Changes take effect when the widget restarts.
+
+# The Obsidian note to show. "~" is expanded.
+todo_file = "~/Obsidian/TODO.md"
+
+# Where ticked tasks are moved. Defaults to DONE.md next to todo_file.
+# done_file = "~/Obsidian/DONE.md"
+
+title = "◆ Obsidian TODOs"
+refresh_seconds = 60
+width = 360                # pixels; height grows to fit the tasks
+opacity = 0.95             # 0.1–1.0 (ignored by some compositors)
+always_on_top = true
+
+# Where the note first appears: top-right, top-left, bottom-right, bottom-left.
+anchor = "top-right"
+offset_x = 40              # px from the left/right screen edge
+offset_y = 60              # px from the top/bottom screen edge
+
+# Drag the note anywhere; with this on it reopens where you left it.
+# Run with --reset-position to go back to anchor/offsets.
+remember_position = true
+
+[colors]
+background = "#FEFBB3"
+header = "#F0E040"
+text = "#2a2a2a"
+muted = "#777777"          # timestamp and completed tasks
+link = "#1756A9"
+code_background = "#F3EFA1"
+warning = "#A02B20"
+close_hover = "#cc0000"
+
+[fonts]
+# Defaults depend on the OS: Helvetica Neue / Menlo on macOS,
+# the fontconfig "Sans" / "Monospace" aliases on Linux.
+# family = "Sans"
+# mono_family = "Monospace"
+# size = 11
+# header_size = 10
+# mono_size = 10
